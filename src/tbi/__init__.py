@@ -1,0 +1,1 @@
+"""Tibian Bazaar Investigator"""
