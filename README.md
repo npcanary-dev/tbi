@@ -1,2 +1,2 @@
-# tbi
+# TBI
 Tibian Bazaar Investigator
