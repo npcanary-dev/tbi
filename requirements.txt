@@ -21,6 +21,7 @@ multidict==6.4.4
 propcache==0.3.1
 pydantic==2.11.5
 pydantic_core==2.33.2
+pydantic-settings==2.9.1
 pymongo==4.13.0
 pytailwindcss==0.2.0
 python-socks==2.7.1

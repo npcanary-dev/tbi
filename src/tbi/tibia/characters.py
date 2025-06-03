@@ -14,7 +14,8 @@ async def fetch_character(charname: str) -> Dict[str, Any]:
     try:
         character = await client.fetch_character(charname)
         if character is not None:
-            return character.dict()
+            # Return character data, skip TibiaResponse metadata
+            return character.model_dump()["data"]
         else:
             raise Exception(f"Character {charname!r} not found.")
     except Exception:
