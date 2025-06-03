@@ -4,6 +4,8 @@ ENV PYTHONUNBUFFERED 1
 ENV PIP_DISABLE_PIP_VERSION_CHECK 1
 ENV PYTHONDONTWRITEBYTECODE 1
 
+RUN apt-get update && apt-get install build-essential -y
+
 WORKDIR /tbi
 
 COPY ./requirements.txt .
