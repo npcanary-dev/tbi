@@ -1,0 +1,25 @@
+[project]
+name = "tbi"
+keywords = ["tibia"]
+description = "Tibian Bazaar Investigator"
+
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3"
+]
+
+dynamic = ["version", "readme", "dependencies"]
+
+[project.scripts]
+tbi = "tbi.core:main"
+
+[tool.setuptools]
+dynamic.version = {file = "VERSION"}
+dynamic.readme = {file = ["README.md"], content-type = "text/markdown"}
+dynamic.dependencies = {file = ["requirements.txt"]}
+
+[tool.isort]
+profile = "black"
+
+[tool.pyright]
+include = ["src"]
